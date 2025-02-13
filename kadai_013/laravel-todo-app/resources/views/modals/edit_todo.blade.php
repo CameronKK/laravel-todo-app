@@ -10,6 +10,11 @@
         @method('patch')
         <div class="modal-body">
           <input type="text" class="form-control" name="content" value="{{ $todo->content }}">
+
+          <!-- 詳細 -->
+          <label for="detail" class="form-label mt-3">詳細</label>
+          <textarea class="form-control" name="detail" rows="2">{{ old('detail', $todo->detail) }}</textarea>
+
           <div class="d-flex flex-wrap">
             @foreach($tags as $tag)
               <label>

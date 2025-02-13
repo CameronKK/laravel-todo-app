@@ -11,10 +11,6 @@
           <label for="content" class="form-label">タイトル</label>
           <input type="text" class="form-control" name="content" required>
 
-          <!-- 詳細 -->
-          <label for="detail" class="form-label mt-3">詳細</label>
-          <textarea class="form-control" name="detail" rows="3"></textarea>
-
           <label class="form-label mt-3">タグ</label>
           <div class="d-flex flex-wrap">
             @foreach($tags as $tag)
